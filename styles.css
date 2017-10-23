@@ -152,18 +152,15 @@ a {
     .intro-paragraph {
         width: 90vw;
         margin: auto;
-        border: 2px solid green;
     }
     .intro-container {
         flex-direction: column;
         width: 95vw;
         height: auto;
         margin: auto;
-        border: 2px solid blue;
     }
     .intro-header {
         flex-direction: column;
-        border: 2px solid orange;
         width: 95vw;
     }
     .intro-text {
@@ -171,7 +168,6 @@ a {
         height: 350px;
         margin: auto;
         margin-bottom: 50px;
-        border: 2px solid black;
         flex-direction: column;
     }
     .links-container {
