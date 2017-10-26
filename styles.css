@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
 	background-size: 100vw 100vh;*/
     width: 100vw;
 	height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .page {
@@ -31,7 +36,7 @@ em{
     display: flex;
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 6vh;
     justify-content: space-around;
     background: rgb(70, 117, 155);
     font-size: 20px;
@@ -173,4 +178,51 @@ em{
         width: 95vw;
         height: 95vw;
     }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 94vh;
+    position: fixed;
+    top: 50px;
+
+}
+.mainImage-container {
+    display: flex;
+    width: 80vw;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+.mainImage {
+    width: 100%;
+    height: 100%;
+}
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 100%;
+    background: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-transform: translate3d(0,0,1px);
+    -webkit-backface-visibility: hidden;
+}
+
+.preview-element {
+    width: 95%;
+    height: 25vh;
+    margin-bottom: 5%;
+}
+
+.previewIcon {
+    width: 100%;
+    height: 100%;
 }
