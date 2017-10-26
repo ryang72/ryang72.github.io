@@ -132,7 +132,8 @@ em{
 }
 
 .text-pop {
-    color: rgb(248, 105, 32);
+    /*color: rgb(248, 105, 32);*/
+    color: #e69500;
 }
 
 .lol {
