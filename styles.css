@@ -1,3 +1,6 @@
+body {
+  background-color: #f9f9f9;
+}
 .page {
   font-family: "Inconsolata", monospace;
   font-size: 24px;
@@ -7,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
   color: #151515;
 }
 .content {
@@ -19,10 +21,19 @@
 .text-pop {
   text-decoration: none;
   color: rgb(72, 172, 255);
+  position: relative;
 }
-.text-pop:hover {
-  text-decoration: underline;
-  text-decoration-color: rgb(255, 155, 0);
+.text-pop:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid rgba(255, 155, 0, 0.8);
+  transition: 0.4s;
+}
+.text-pop:hover:after {
+  width: 100%;
 }
 .db {
   color: rgb(19, 129, 195);
@@ -38,4 +49,21 @@
 }
 .yahoo {
   color: rgb(74, 0, 160);
+}
+.expand{
+  position:relative;
+  text-decoration:none;
+  display:inline-block;
+}
+.expand:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #000;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  transform-origin:100% 50%
+}
+.expand:hover:after { 
+  transform: scaleX(1);
+  transform-origin:0 50%;
 }
