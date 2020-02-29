@@ -19,6 +19,7 @@ body {
   max-width: 720px;
   margin: 15px;
   padding: 15px;
+  overflow-y: auto;
 }
 
 .text-pop {
