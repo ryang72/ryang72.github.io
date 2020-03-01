@@ -18,8 +18,15 @@ body {
 .content {
   max-width: 720px;
   margin-top: calc(50vh - 360px);
-  margin-bottom: 72px;
   padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+@media (max-height: 720px) {
+  .content {
+    margin-top: 0px;
+  }
 }
 
 .text-pop {
